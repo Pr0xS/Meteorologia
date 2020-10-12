@@ -1,0 +1,141 @@
+\hypertarget{meteo_8h}{}\section{Referencia del Archivo meteo.\+h}
+\label{meteo_8h}\index{meteo.\+h@{meteo.\+h}}
+
+
+En este fichero están declaradas aquellas funciones que están relacionadas con el manejo y procesamiento de los datos relacionados con la meteorología.  
+
+
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_city}{City}
+\begin{DoxyCompactList}\small\item\em Estructura de datos que contiene la informacíon de la ciudad almacenada. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_meteo}{Meteo}
+\begin{DoxyCompactList}\small\item\em Estructura de datos que continen la información meteorilógica de una ciudad en una fecha determinada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{meteo_8h_abc17b507204e3b9f31ce4c92dcdf9f25}{print\+Meteo\+Entry} (struct \hyperlink{struct_meteo}{Meteo} meteo\+Data)
+\begin{DoxyCompactList}\small\item\em La funcion \hyperlink{meteo_8h_abc17b507204e3b9f31ce4c92dcdf9f25}{print\+Meteo\+Entry()} muestra por pantalla la información de la entrada meteorológica recibida. \end{DoxyCompactList}\item 
+int \hyperlink{meteo_8h_a3d3bf46df3c9bf070f7fd007f03e0308}{load\+Data} (const char $\ast$filename, struct \hyperlink{struct_city}{City} $\ast$$\ast$cities)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{meteo_8h_a3d3bf46df3c9bf070f7fd007f03e0308}{load\+Data()} carga datos desde un fichero de texto en formato csv a un array de ciudades de tipo \hyperlink{struct_city}{City} (struct \hyperlink{struct_city}{City} $\ast$). Para cada entrada de este array de ciudades, se encuantrasn los datos meteorológicos correspondientes a cada ciudad. Las ciudades son ordenadas por orden Alfabético para facilitar su búsqueda. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_meteo}{Meteo} \hyperlink{meteo_8h_a880debb531f66cd83579f541dc6ec64b}{custom\+Meteo\+Data\+Parser} (char $\ast$line)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{meteo_8h_a880debb531f66cd83579f541dc6ec64b}{custom\+Meteo\+Data\+Parser()} recibe una string con los datos Meteorológicos en formato csv y los convierte a una estructura de datos de tipo struct \hyperlink{struct_meteo}{Meteo}. \end{DoxyCompactList}\item 
+int \hyperlink{meteo_8h_ad9b336515fd64ef72c6e26f5a35b563e}{binary\+Search\+Cities} (char $\ast$city, struct \hyperlink{struct_city}{City} $\ast$cities, int num\+Cities)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{meteo_8h_ad9b336515fd64ef72c6e26f5a35b563e}{binary\+Search\+Cities()} realiza una busqueda binaria en el array de ciudades. \end{DoxyCompactList}\item 
+int \hyperlink{meteo_8h_ab82d28c57e0a02c9b97e1616cc166771}{binary\+Search\+Dates} (char $\ast$date, struct \hyperlink{struct_meteo}{Meteo} $\ast$meteo\+Data, int num\+Data\+Entries)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{meteo_8h_ad9b336515fd64ef72c6e26f5a35b563e}{binary\+Search\+Cities()} realiza una busqueda binaria en el array de ciudades. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{meteo_8h_a1334a23e19521c91f00bfb962767451b}\label{meteo_8h_a1334a23e19521c91f00bfb962767451b}} 
+int {\bfseries get\+Forecast} (struct \hyperlink{struct_city}{City} $\ast$cities, int num\+Cities, struct \hyperlink{struct_meteo}{Meteo} $\ast$$\ast$forecast, char $\ast$city, char $\ast$date, int days)
+\item 
+\mbox{\Hypertarget{meteo_8h_ac10c23e1a6f40600227c4025d988a05e}\label{meteo_8h_ac10c23e1a6f40600227c4025d988a05e}} 
+int {\bfseries meteo\+Data\+To\+J\+S\+ON} (struct \hyperlink{struct_meteo}{Meteo} $\ast$meteo\+Data, int meteo\+Data\+Length, char $\ast$$\ast$json\+Data, char unit)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+En este fichero están declaradas aquellas funciones que están relacionadas con el manejo y procesamiento de los datos relacionados con la meteorología. 
+
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{meteo_8h_ad9b336515fd64ef72c6e26f5a35b563e}\label{meteo_8h_ad9b336515fd64ef72c6e26f5a35b563e}} 
+\index{meteo.\+h@{meteo.\+h}!binary\+Search\+Cities@{binary\+Search\+Cities}}
+\index{binary\+Search\+Cities@{binary\+Search\+Cities}!meteo.\+h@{meteo.\+h}}
+\subsubsection{\texorpdfstring{binary\+Search\+Cities()}{binarySearchCities()}}
+{\footnotesize\ttfamily int binary\+Search\+Cities (\begin{DoxyParamCaption}\item[{char $\ast$}]{city,  }\item[{struct \hyperlink{struct_city}{City} $\ast$}]{cities,  }\item[{int}]{num\+Cities }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{meteo_8h_ad9b336515fd64ef72c6e26f5a35b563e}{binary\+Search\+Cities()} realiza una busqueda binaria en el array de ciudades. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em city} & Se trata de un string (char $\ast$) que contiene el nombre de la ciudad a buscar \\
+\hline
+{\em cities} & Se trata de un array de estructuras de tipo \hyperlink{struct_city}{City} (struct \hyperlink{struct_city}{City} $\ast$) que contiene las cidudades sobre las que se realizará la busqueda \\
+\hline
+{\em num\+Cities} & Se trata de un entero con el número de ciudades almacenadas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La función binary\+Search\+Cities devuelve la posición en el array de la ciudad si la ciudad es encontrada. Si no se ha encontrado devolverá -\/1. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{meteo_8h_ab82d28c57e0a02c9b97e1616cc166771}\label{meteo_8h_ab82d28c57e0a02c9b97e1616cc166771}} 
+\index{meteo.\+h@{meteo.\+h}!binary\+Search\+Dates@{binary\+Search\+Dates}}
+\index{binary\+Search\+Dates@{binary\+Search\+Dates}!meteo.\+h@{meteo.\+h}}
+\subsubsection{\texorpdfstring{binary\+Search\+Dates()}{binarySearchDates()}}
+{\footnotesize\ttfamily int binary\+Search\+Dates (\begin{DoxyParamCaption}\item[{char $\ast$}]{date,  }\item[{struct \hyperlink{struct_meteo}{Meteo} $\ast$}]{meteo\+Data,  }\item[{int}]{num\+Data\+Entries }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{meteo_8h_ad9b336515fd64ef72c6e26f5a35b563e}{binary\+Search\+Cities()} realiza una busqueda binaria en el array de ciudades. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em city} & Se trata de un puntero a una string (char $\ast$) que contiene el nombre de la ciudad a buscar \\
+\hline
+{\em cities} & Se trata de un array de estructuras de tipo \hyperlink{struct_city}{City} (struct \hyperlink{struct_city}{City} $\ast$) que contiene las cidudades sobre las que se realizará la busqueda \\
+\hline
+{\em num\+Cities} & Se trata de un entero con el número de ciudades almacenadas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La función binary\+Search\+Cities devuelve la posición en el array de la ciudad si la ciudad es encontrada. Si no se ha encontrado devolverá -\/1. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{meteo_8h_a880debb531f66cd83579f541dc6ec64b}\label{meteo_8h_a880debb531f66cd83579f541dc6ec64b}} 
+\index{meteo.\+h@{meteo.\+h}!custom\+Meteo\+Data\+Parser@{custom\+Meteo\+Data\+Parser}}
+\index{custom\+Meteo\+Data\+Parser@{custom\+Meteo\+Data\+Parser}!meteo.\+h@{meteo.\+h}}
+\subsubsection{\texorpdfstring{custom\+Meteo\+Data\+Parser()}{customMeteoDataParser()}}
+{\footnotesize\ttfamily struct \hyperlink{struct_meteo}{Meteo} custom\+Meteo\+Data\+Parser (\begin{DoxyParamCaption}\item[{char $\ast$}]{line }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{meteo_8h_a880debb531f66cd83579f541dc6ec64b}{custom\+Meteo\+Data\+Parser()} recibe una string con los datos Meteorológicos en formato csv y los convierte a una estructura de datos de tipo struct \hyperlink{struct_meteo}{Meteo}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em line} & Se trata de un string (char $\ast$) que contiene la string con los datos que se quieren cargar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La función \hyperlink{meteo_8h_a880debb531f66cd83579f541dc6ec64b}{custom\+Meteo\+Data\+Parser()} devuelve una estructura de datos de tipo \hyperlink{struct_meteo}{Meteo} (struct \hyperlink{struct_meteo}{Meteo}) con los datos cargados del string line 
+\end{DoxyReturn}
+\mbox{\Hypertarget{meteo_8h_a3d3bf46df3c9bf070f7fd007f03e0308}\label{meteo_8h_a3d3bf46df3c9bf070f7fd007f03e0308}} 
+\index{meteo.\+h@{meteo.\+h}!load\+Data@{load\+Data}}
+\index{load\+Data@{load\+Data}!meteo.\+h@{meteo.\+h}}
+\subsubsection{\texorpdfstring{load\+Data()}{loadData()}}
+{\footnotesize\ttfamily int load\+Data (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{struct \hyperlink{struct_city}{City} $\ast$$\ast$}]{cities }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{meteo_8h_a3d3bf46df3c9bf070f7fd007f03e0308}{load\+Data()} carga datos desde un fichero de texto en formato csv a un array de ciudades de tipo \hyperlink{struct_city}{City} (struct \hyperlink{struct_city}{City} $\ast$). Para cada entrada de este array de ciudades, se encuantrasn los datos meteorológicos correspondientes a cada ciudad. Las ciudades son ordenadas por orden Alfabético para facilitar su búsqueda. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em filename} & Se trata de un string (char $\ast$) que contiene el nombre del fichero de texto a cargar. \\
+\hline
+{\em cities} & Se trata de un puntero a un array de estructuras de tipo \hyperlink{struct_city}{City} (struct \hyperlink{struct_city}{City} $\ast$$\ast$) en el que se van a almacenar los datos cargados por ciudades \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La función \hyperlink{meteo_8h_a3d3bf46df3c9bf070f7fd007f03e0308}{load\+Data()} devuelve el número de elementos cargados si tiene éxito. En caso de error devolverá -\/1. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Atención}
+Es necesario liberar la memoria reservada en la función \hyperlink{meteo_8h_a3d3bf46df3c9bf070f7fd007f03e0308}{load\+Data()} del parametro cities. Para ello liberaremos la información para cada entrada meteorológica para cada ciudad y posteriormente liberaremos la memoria reservada para cada ciudad. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{meteo_8h_abc17b507204e3b9f31ce4c92dcdf9f25}\label{meteo_8h_abc17b507204e3b9f31ce4c92dcdf9f25}} 
+\index{meteo.\+h@{meteo.\+h}!print\+Meteo\+Entry@{print\+Meteo\+Entry}}
+\index{print\+Meteo\+Entry@{print\+Meteo\+Entry}!meteo.\+h@{meteo.\+h}}
+\subsubsection{\texorpdfstring{print\+Meteo\+Entry()}{printMeteoEntry()}}
+{\footnotesize\ttfamily void print\+Meteo\+Entry (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_meteo}{Meteo}}]{meteo\+Data }\end{DoxyParamCaption})}
+
+
+
+La funcion \hyperlink{meteo_8h_abc17b507204e3b9f31ce4c92dcdf9f25}{print\+Meteo\+Entry()} muestra por pantalla la información de la entrada meteorológica recibida. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em meteo\+Data} & Se trata de una estructura de datos de tipo \hyperlink{struct_meteo}{Meteo} la cual contiene la información a mostrar por pantalla \\
+\hline
+\end{DoxyParams}

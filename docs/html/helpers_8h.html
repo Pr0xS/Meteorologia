@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Meteologica: Referencia del Archivo helpers.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Meteologica
+   </div>
+   <div id="projectbrief">Previsión meteorológica</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('helpers_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo helpers.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>En este fichero están declaradas aquellas funciones cuyo objetivo es de caracter general y pueden ser invocadas en multiples situaciones.  
+<a href="#details">Más...</a></p>
+
+<p><a href="helpers_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a58adee3403e7a7512c6f49ef0e8b0f07"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8h.html#a58adee3403e7a7512c6f49ef0e8b0f07">split</a> (char *string, const char delimiter)</td></tr>
+<tr class="memdesc:a58adee3403e7a7512c6f49ef0e8b0f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función <a class="el" href="helpers_8h.html#a58adee3403e7a7512c6f49ef0e8b0f07" title="La función split() divide el string recibido en substring utilizando como divisor un delimitador...">split()</a> divide el string recibido en substring utilizando como divisor un delimitador. Ejemplo split("Esto es una prueba", ' ') obtendriamos un array con 4 strings "Esto", "es", "una", "prueba".  <a href="#a58adee3403e7a7512c6f49ef0e8b0f07">Más...</a><br /></td></tr>
+<tr class="separator:a58adee3403e7a7512c6f49ef0e8b0f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ca2f658e02c3ef3302e2ad7a0356a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8h.html#ae9ca2f658e02c3ef3302e2ad7a0356a0">fixDecimalNotation</a> (char *string)</td></tr>
+<tr class="memdesc:ae9ca2f658e02c3ef3302e2ad7a0356a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función <a class="el" href="helpers_8h.html#ae9ca2f658e02c3ef3302e2ad7a0356a0" title="La función fixDecimalNotation() corrige la notación de los números decimales. Sustituye los decimales...">fixDecimalNotation()</a> corrige la notación de los números decimales. Sustituye los decimales expresados con ',' por '.' Ejemplo: 12,23 -&gt; 12.23.  <a href="#ae9ca2f658e02c3ef3302e2ad7a0356a0">Más...</a><br /></td></tr>
+<tr class="separator:ae9ca2f658e02c3ef3302e2ad7a0356a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68d9fdd9102d21554f60e6c2afde9bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8h.html#af68d9fdd9102d21554f60e6c2afde9bc">trim</a> (char *string)</td></tr>
+<tr class="memdesc:af68d9fdd9102d21554f60e6c2afde9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función <a class="el" href="helpers_8h.html#af68d9fdd9102d21554f60e6c2afde9bc" title="La función trim() elimina los espacios en blanco &#39; &#39; y otros caracters especiales tanto al comienzo c...">trim()</a> elimina los espacios en blanco ' ' y otros caracters especiales tanto al comienzo como al final del string recibido.  <a href="#af68d9fdd9102d21554f60e6c2afde9bc">Más...</a><br /></td></tr>
+<tr class="separator:af68d9fdd9102d21554f60e6c2afde9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9b91100e4307984c9e41f3d47dada0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8h.html#a2d9b91100e4307984c9e41f3d47dada0">getIntFromUserInput</a> (int *number)</td></tr>
+<tr class="memdesc:a2d9b91100e4307984c9e41f3d47dada0"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función <a class="el" href="helpers_8h.html#a2d9b91100e4307984c9e41f3d47dada0" title="La función getIntFromUserInput() recibe una entrada por teclado y la convierte en INT cuando sea posi...">getIntFromUserInput()</a> recibe una entrada por teclado y la convierte en INT cuando sea posible.  <a href="#a2d9b91100e4307984c9e41f3d47dada0">Más...</a><br /></td></tr>
+<tr class="separator:a2d9b91100e4307984c9e41f3d47dada0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a367f54c6ff80a74d875d3b161da90827"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8h.html#a367f54c6ff80a74d875d3b161da90827">getStringFromUserInput</a> (char *string, int size)</td></tr>
+<tr class="memdesc:a367f54c6ff80a74d875d3b161da90827"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función <a class="el" href="helpers_8h.html#a367f54c6ff80a74d875d3b161da90827" title="La función getStringFromUserInput() recibe una entrada por teclado y la almacena. ...">getStringFromUserInput()</a> recibe una entrada por teclado y la almacena.  <a href="#a367f54c6ff80a74d875d3b161da90827">Más...</a><br /></td></tr>
+<tr class="separator:a367f54c6ff80a74d875d3b161da90827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e16ea4710f499152daf970bcffb0074"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8h.html#a1e16ea4710f499152daf970bcffb0074">compareString</a> (void const *str1, void const *str2)</td></tr>
+<tr class="memdesc:a1e16ea4710f499152daf970bcffb0074"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función <a class="el" href="helpers_8h.html#a1e16ea4710f499152daf970bcffb0074" title="La función compareString() compara dos string. Internamente utiliza la funcion strcmp(). La razón de ser de esta función es para utilizarla como comparador en la función de ordenación qsort() ">compareString()</a> compara dos string. Internamente utiliza la funcion strcmp(). La razón de ser de esta función es para utilizarla como comparador en la función de ordenación qsort()  <a href="#a1e16ea4710f499152daf970bcffb0074">Más...</a><br /></td></tr>
+<tr class="separator:a1e16ea4710f499152daf970bcffb0074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc70074fd651e078431ad3736e7ceab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8h.html#a2bc70074fd651e078431ad3736e7ceab">compareDates</a> (char *date1, char *date2)</td></tr>
+<tr class="memdesc:a2bc70074fd651e078431ad3736e7ceab"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función <a class="el" href="helpers_8h.html#a2bc70074fd651e078431ad3736e7ceab" title="La función compareDates() compara dos fechas en formato AAAA/MM/DD (Año/Mes/Día) ">compareDates()</a> compara dos fechas en formato AAAA/MM/DD (Año/Mes/Día)  <a href="#a2bc70074fd651e078431ad3736e7ceab">Más...</a><br /></td></tr>
+<tr class="separator:a2bc70074fd651e078431ad3736e7ceab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ede5ead55335ba299ce5e6aca88161"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8h.html#a51ede5ead55335ba299ce5e6aca88161">strCelsiusToStrFahrenheit</a> (char *celsius, char **fahrenheit)</td></tr>
+<tr class="memdesc:a51ede5ead55335ba299ce5e6aca88161"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función strCelsiusToStrFahrengeit() recibe grados celsiud en formato string para transofrmalor en grados Fahrenheit también en formato string.  <a href="#a51ede5ead55335ba299ce5e6aca88161">Más...</a><br /></td></tr>
+<tr class="separator:a51ede5ead55335ba299ce5e6aca88161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91604741dc25c3a05677088115ca4ff8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8h.html#a91604741dc25c3a05677088115ca4ff8">stringToFloat</a> (double *value, char *data)</td></tr>
+<tr class="memdesc:a91604741dc25c3a05677088115ca4ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función <a class="el" href="helpers_8h.html#a91604741dc25c3a05677088115ca4ff8" title="La función stringToFloat() convierte una cadena de caracteres en float si es posible. ">stringToFloat()</a> convierte una cadena de caracteres en float si es posible.  <a href="#a91604741dc25c3a05677088115ca4ff8">Más...</a><br /></td></tr>
+<tr class="separator:a91604741dc25c3a05677088115ca4ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5353121dd9cdcdc4ca00af0c575fc28a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8h.html#a5353121dd9cdcdc4ca00af0c575fc28a">celsiusToFahrenheit</a> (double celsius)</td></tr>
+<tr class="memdesc:a5353121dd9cdcdc4ca00af0c575fc28a"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función celsiusToFahrenheit convierte los grados Celius introducidos en Fahrenheit.  <a href="#a5353121dd9cdcdc4ca00af0c575fc28a">Más...</a><br /></td></tr>
+<tr class="separator:a5353121dd9cdcdc4ca00af0c575fc28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8410b241bcf3b22e1c847a2283f4e2b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8h.html#a8410b241bcf3b22e1c847a2283f4e2b1">storeToFile</a> (char *filename, char *data)</td></tr>
+<tr class="memdesc:a8410b241bcf3b22e1c847a2283f4e2b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función <a class="el" href="helpers_8h.html#a8410b241bcf3b22e1c847a2283f4e2b1" title="La función storeToFile() almacena en un fichero los datos proporcionados. Esta función creará el fich...">storeToFile()</a> almacena en un fichero los datos proporcionados. Esta función creará el fichero si no existe o lo sobreescribirá en caso de que existiera.  <a href="#a8410b241bcf3b22e1c847a2283f4e2b1">Más...</a><br /></td></tr>
+<tr class="separator:a8410b241bcf3b22e1c847a2283f4e2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255ecddfbf1fed18844d00ec7d2302ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helpers_8h.html#a255ecddfbf1fed18844d00ec7d2302ee">replace</a> (char *string, char c1, char c2)</td></tr>
+<tr class="memdesc:a255ecddfbf1fed18844d00ec7d2302ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función <a class="el" href="helpers_8h.html#a255ecddfbf1fed18844d00ec7d2302ee" title="La función replace(), reemplaza la el caracter c1 por c2 en toda la string. ">replace()</a>, reemplaza la el caracter c1 por c2 en toda la string.  <a href="#a255ecddfbf1fed18844d00ec7d2302ee">Más...</a><br /></td></tr>
+<tr class="separator:a255ecddfbf1fed18844d00ec7d2302ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>En este fichero están declaradas aquellas funciones cuyo objetivo es de caracter general y pueden ser invocadas en multiples situaciones. </p>
+</div><h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a5353121dd9cdcdc4ca00af0c575fc28a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5353121dd9cdcdc4ca00af0c575fc28a">&#9670;&nbsp;</a></span>celsiusToFahrenheit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double celsiusToFahrenheit </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>celsius</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función celsiusToFahrenheit convierte los grados Celius introducidos en Fahrenheit. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">celsius</td><td>Se trata de un double que contiene los grados celsius a convertir </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>La función celsiusToFahrenheit devuelve un double con la conversión de Celsius a Fahrenheit </dd></dl>
+
+</div>
+</div>
+<a id="a2bc70074fd651e078431ad3736e7ceab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bc70074fd651e078431ad3736e7ceab">&#9670;&nbsp;</a></span>compareDates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int compareDates </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>date1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>date2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función <a class="el" href="helpers_8h.html#a2bc70074fd651e078431ad3736e7ceab" title="La función compareDates() compara dos fechas en formato AAAA/MM/DD (Año/Mes/Día) ">compareDates()</a> compara dos fechas en formato AAAA/MM/DD (Año/Mes/Día) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">date1</td><td>Se trata de un string (char *) que contiene la primera fecha a comparar. </td></tr>
+    <tr><td class="paramname">date2</td><td>Se trata de un string (char *) que contiene la segunda fecha a comparar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Si date1 &gt; date2 devuelve un 1; Si date1 &lt; date2 devuelve un -1; Si date1 == date2 devuelve un 0; </dd></dl>
+
+</div>
+</div>
+<a id="a1e16ea4710f499152daf970bcffb0074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e16ea4710f499152daf970bcffb0074">&#9670;&nbsp;</a></span>compareString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int compareString </td>
+          <td>(</td>
+          <td class="paramtype">void const *&#160;</td>
+          <td class="paramname"><em>str1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void const *&#160;</td>
+          <td class="paramname"><em>str2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función <a class="el" href="helpers_8h.html#a1e16ea4710f499152daf970bcffb0074" title="La función compareString() compara dos string. Internamente utiliza la funcion strcmp(). La razón de ser de esta función es para utilizarla como comparador en la función de ordenación qsort() ">compareString()</a> compara dos string. Internamente utiliza la funcion strcmp(). La razón de ser de esta función es para utilizarla como comparador en la función de ordenación qsort() </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str1</td><td>Se trata de un string (char *) que contiene la primera string a comparar. </td></tr>
+    <tr><td class="paramname">str2</td><td>Se trata de un string (char *) que contiene la segunda string a comparar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Si str1 &gt; str2 devuelve un número positivo; Si str1 &lt; str2 devuelve un número negativo; Si str1 == str2 devuelve un cero; </dd></dl>
+
+</div>
+</div>
+<a id="ae9ca2f658e02c3ef3302e2ad7a0356a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ca2f658e02c3ef3302e2ad7a0356a0">&#9670;&nbsp;</a></span>fixDecimalNotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fixDecimalNotation </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función <a class="el" href="helpers_8h.html#ae9ca2f658e02c3ef3302e2ad7a0356a0" title="La función fixDecimalNotation() corrige la notación de los números decimales. Sustituye los decimales...">fixDecimalNotation()</a> corrige la notación de los números decimales. Sustituye los decimales expresados con ',' por '.' Ejemplo: 12,23 -&gt; 12.23. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>Se trata de un string (char *) que contiene el número al que se le quiere corregir el simbolo de decimal. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2d9b91100e4307984c9e41f3d47dada0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9b91100e4307984c9e41f3d47dada0">&#9670;&nbsp;</a></span>getIntFromUserInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getIntFromUserInput </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función <a class="el" href="helpers_8h.html#a2d9b91100e4307984c9e41f3d47dada0" title="La función getIntFromUserInput() recibe una entrada por teclado y la convierte en INT cuando sea posi...">getIntFromUserInput()</a> recibe una entrada por teclado y la convierte en INT cuando sea posible. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>Se trata de un puntero a entero (int *) en el cuál se almacenará el número recibido. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>La función devuelve un 0 en caso de que se haya podido recibir y convertir la entrada a entero. En caso de error, devolverá -1. </dd></dl>
+
+</div>
+</div>
+<a id="a367f54c6ff80a74d875d3b161da90827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a367f54c6ff80a74d875d3b161da90827">&#9670;&nbsp;</a></span>getStringFromUserInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getStringFromUserInput </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función <a class="el" href="helpers_8h.html#a367f54c6ff80a74d875d3b161da90827" title="La función getStringFromUserInput() recibe una entrada por teclado y la almacena. ...">getStringFromUserInput()</a> recibe una entrada por teclado y la almacena. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>Se trata de un string (char *) en el cuál se almacenará el la cadena de texto recibida. </td></tr>
+    <tr><td class="paramname">size</td><td>Entero con la tamaño máximo de la cadena que se desea recibir. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>La función devuelve un entero indicando la longitud del string recibido. En caso de error devolverá -1. </dd></dl>
+
+</div>
+</div>
+<a id="a255ecddfbf1fed18844d00ec7d2302ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a255ecddfbf1fed18844d00ec7d2302ee">&#9670;&nbsp;</a></span>replace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void replace </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función <a class="el" href="helpers_8h.html#a255ecddfbf1fed18844d00ec7d2302ee" title="La función replace(), reemplaza la el caracter c1 por c2 en toda la string. ">replace()</a>, reemplaza la el caracter c1 por c2 en toda la string. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>Se trata de un string que contiene los caracteres que se quieren reemplazar </td></tr>
+    <tr><td class="paramname">c1</td><td>Se trata de caracter que se quiere reemplazar por otro </td></tr>
+    <tr><td class="paramname">c2</td><td>Se trata de caracter por el cuál se va a reemplazar </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a58adee3403e7a7512c6f49ef0e8b0f07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58adee3403e7a7512c6f49ef0e8b0f07">&#9670;&nbsp;</a></span>split()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char** split </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>delimiter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función <a class="el" href="helpers_8h.html#a58adee3403e7a7512c6f49ef0e8b0f07" title="La función split() divide el string recibido en substring utilizando como divisor un delimitador...">split()</a> divide el string recibido en substring utilizando como divisor un delimitador. Ejemplo split("Esto es una prueba", ' ') obtendriamos un array con 4 strings "Esto", "es", "una", "prueba". </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>Se trata de un string (char *) que contiene la string que se quiere dividir. </td></tr>
+    <tr><td class="paramname">delimiter</td><td>Se trata de un caracter (char) que contiene el delimitador por el cual se dividirá el string. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>La función <a class="el" href="helpers_8h.html#a58adee3403e7a7512c6f49ef0e8b0f07" title="La función split() divide el string recibido en substring utilizando como divisor un delimitador...">split()</a> devuelve un array de strings (char **) en el cual cada posición del array contiene una de las divisiones del string introducido. </dd></dl>
+<dl class="section warning"><dt>Atención</dt><dd>Es necesario liberar la memoria reservada por la funcion <a class="el" href="helpers_8h.html#a58adee3403e7a7512c6f49ef0e8b0f07" title="La función split() divide el string recibido en substring utilizando como divisor un delimitador...">split()</a> del parametro devuelto. Para ello liberaremos la memoria reservada para cada string devuelto en el array y luego liberaremos la memoria del array. </dd></dl>
+
+</div>
+</div>
+<a id="a8410b241bcf3b22e1c847a2283f4e2b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8410b241bcf3b22e1c847a2283f4e2b1">&#9670;&nbsp;</a></span>storeToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int storeToFile </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función <a class="el" href="helpers_8h.html#a8410b241bcf3b22e1c847a2283f4e2b1" title="La función storeToFile() almacena en un fichero los datos proporcionados. Esta función creará el fich...">storeToFile()</a> almacena en un fichero los datos proporcionados. Esta función creará el fichero si no existe o lo sobreescribirá en caso de que existiera. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Se trata de un string (char *) que contiene el nombre del fichero donde se va a guardar los datos </td></tr>
+    <tr><td class="paramname">data</td><td>Se trata de un string (char *) que contiene los datos que se van a almancenar en el fichero </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>La función storeToFile devuelve un entero con un valor de 0 en caso de éxito y un -1 en caso de error </dd></dl>
+
+</div>
+</div>
+<a id="a51ede5ead55335ba299ce5e6aca88161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51ede5ead55335ba299ce5e6aca88161">&#9670;&nbsp;</a></span>strCelsiusToStrFahrenheit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int strCelsiusToStrFahrenheit </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>celsius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>fahrenheit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función strCelsiusToStrFahrengeit() recibe grados celsiud en formato string para transofrmalor en grados Fahrenheit también en formato string. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">celsius</td><td>Se trata de un string (char *) que contiene los grados celsiud a convertir </td></tr>
+    <tr><td class="paramname">fahrenheit</td><td>Se trata de un puntero a string (char **) que contendrá el resultado de la conversión de Celsiud a Fahrenheit </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>La función strCelsiudToStrFahrenheit() devuelve un entero con valor 0 si la operación a resultado con éxito y un -1 si se produce un error. </dd></dl>
+<dl class="section warning"><dt>Atención</dt><dd>Es necesario liberar la memoria reservada por la función <a class="el" href="helpers_8h.html#a51ede5ead55335ba299ce5e6aca88161" title="La función strCelsiusToStrFahrengeit() recibe grados celsiud en formato string para transofrmalor en ...">strCelsiusToStrFahrenheit()</a>. Para ello liberaremos la mermoria del puntero a string fahrenheit. </dd></dl>
+
+</div>
+</div>
+<a id="a91604741dc25c3a05677088115ca4ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91604741dc25c3a05677088115ca4ff8">&#9670;&nbsp;</a></span>stringToFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stringToFloat </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función <a class="el" href="helpers_8h.html#a91604741dc25c3a05677088115ca4ff8" title="La función stringToFloat() convierte una cadena de caracteres en float si es posible. ">stringToFloat()</a> convierte una cadena de caracteres en float si es posible. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Se trata de un double donde se almacenará el número en caso de éxito; </td></tr>
+    <tr><td class="paramname">data</td><td>Se trata de un string (char *) que contiene los datos que se desean convertir </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>La función stringToFloat devuelve un entero con un 0 en caso de éxito y un -1 si hay algún error. </dd></dl>
+
+</div>
+</div>
+<a id="af68d9fdd9102d21554f60e6c2afde9bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af68d9fdd9102d21554f60e6c2afde9bc">&#9670;&nbsp;</a></span>trim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void trim </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función <a class="el" href="helpers_8h.html#af68d9fdd9102d21554f60e6c2afde9bc" title="La función trim() elimina los espacios en blanco &#39; &#39; y otros caracters especiales tanto al comienzo c...">trim()</a> elimina los espacios en blanco ' ' y otros caracters especiales tanto al comienzo como al final del string recibido. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>Se trata de un string (char *) a la que le queremos quitar los espacios en blanco. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="helpers_8h.html">helpers.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

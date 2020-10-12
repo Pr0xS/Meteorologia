@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Meteologica: Referencia del Archivo meteo.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Meteologica
+   </div>
+   <div id="projectbrief">Previsión meteorológica</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('meteo_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo meteo.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>En este fichero están definidas las funciones declaradas en <a class="el" href="meteo_8h.html" title="En este fichero están declaradas aquellas funciones que están relacionadas con el manejo y procesamie...">meteo.h</a>.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="meteo_8h_source.html">meteo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="helpers_8h_source.html">helpers.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:afb25404acede8ce2750c0a27b632178e"><td class="memItemLeft" align="right" valign="top"><a id="afb25404acede8ce2750c0a27b632178e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CITIES_BUFFER_INCREMENT</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:afb25404acede8ce2750c0a27b632178e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a9af87b23ed5c174a7ea933a9a6de3"><td class="memItemLeft" align="right" valign="top"><a id="a16a9af87b23ed5c174a7ea933a9a6de3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>METEODATA_BUFFER_INCREMENT</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a16a9af87b23ed5c174a7ea933a9a6de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:abc17b507204e3b9f31ce4c92dcdf9f25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meteo_8c.html#abc17b507204e3b9f31ce4c92dcdf9f25">printMeteoEntry</a> (struct <a class="el" href="struct_meteo.html">Meteo</a> meteoData)</td></tr>
+<tr class="memdesc:abc17b507204e3b9f31ce4c92dcdf9f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">La funcion <a class="el" href="meteo_8h.html#abc17b507204e3b9f31ce4c92dcdf9f25" title="La funcion printMeteoEntry() muestra por pantalla la información de la entrada meteorológica recibida...">printMeteoEntry()</a> muestra por pantalla la información de la entrada meteorológica recibida.  <a href="#abc17b507204e3b9f31ce4c92dcdf9f25">Más...</a><br /></td></tr>
+<tr class="separator:abc17b507204e3b9f31ce4c92dcdf9f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3bf46df3c9bf070f7fd007f03e0308"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meteo_8c.html#a3d3bf46df3c9bf070f7fd007f03e0308">loadData</a> (const char *filename, struct <a class="el" href="struct_city.html">City</a> **cities)</td></tr>
+<tr class="memdesc:a3d3bf46df3c9bf070f7fd007f03e0308"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función <a class="el" href="meteo_8h.html#a3d3bf46df3c9bf070f7fd007f03e0308" title="La función loadData() carga datos desde un fichero de texto en formato csv a un array de ciudades de ...">loadData()</a> carga datos desde un fichero de texto en formato csv a un array de ciudades de tipo <a class="el" href="struct_city.html" title="Estructura de datos que contiene la informacíon de la ciudad almacenada. ">City</a> (struct <a class="el" href="struct_city.html" title="Estructura de datos que contiene la informacíon de la ciudad almacenada. ">City</a> *). Para cada entrada de este array de ciudades, se encuantrasn los datos meteorológicos correspondientes a cada ciudad. Las ciudades son ordenadas por orden Alfabético para facilitar su búsqueda.  <a href="#a3d3bf46df3c9bf070f7fd007f03e0308">Más...</a><br /></td></tr>
+<tr class="separator:a3d3bf46df3c9bf070f7fd007f03e0308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880debb531f66cd83579f541dc6ec64b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_meteo.html">Meteo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meteo_8c.html#a880debb531f66cd83579f541dc6ec64b">customMeteoDataParser</a> (char *line)</td></tr>
+<tr class="memdesc:a880debb531f66cd83579f541dc6ec64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función <a class="el" href="meteo_8h.html#a880debb531f66cd83579f541dc6ec64b" title="La función customMeteoDataParser() recibe una string con los datos Meteorológicos en formato csv y lo...">customMeteoDataParser()</a> recibe una string con los datos Meteorológicos en formato csv y los convierte a una estructura de datos de tipo struct <a class="el" href="struct_meteo.html" title="Estructura de datos que continen la información meteorilógica de una ciudad en una fecha determinada...">Meteo</a>.  <a href="#a880debb531f66cd83579f541dc6ec64b">Más...</a><br /></td></tr>
+<tr class="separator:a880debb531f66cd83579f541dc6ec64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b336515fd64ef72c6e26f5a35b563e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meteo_8c.html#ad9b336515fd64ef72c6e26f5a35b563e">binarySearchCities</a> (char *city, struct <a class="el" href="struct_city.html">City</a> *cities, int numCities)</td></tr>
+<tr class="memdesc:ad9b336515fd64ef72c6e26f5a35b563e"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función <a class="el" href="meteo_8h.html#ad9b336515fd64ef72c6e26f5a35b563e" title="La función binarySearchCities() realiza una busqueda binaria en el array de ciudades. ">binarySearchCities()</a> realiza una busqueda binaria en el array de ciudades.  <a href="#ad9b336515fd64ef72c6e26f5a35b563e">Más...</a><br /></td></tr>
+<tr class="separator:ad9b336515fd64ef72c6e26f5a35b563e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab82d28c57e0a02c9b97e1616cc166771"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meteo_8c.html#ab82d28c57e0a02c9b97e1616cc166771">binarySearchDates</a> (char *date, struct <a class="el" href="struct_meteo.html">Meteo</a> *meteoData, int numDataEntries)</td></tr>
+<tr class="memdesc:ab82d28c57e0a02c9b97e1616cc166771"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función <a class="el" href="meteo_8h.html#ad9b336515fd64ef72c6e26f5a35b563e" title="La función binarySearchCities() realiza una busqueda binaria en el array de ciudades. ">binarySearchCities()</a> realiza una busqueda binaria en el array de ciudades.  <a href="#ab82d28c57e0a02c9b97e1616cc166771">Más...</a><br /></td></tr>
+<tr class="separator:ab82d28c57e0a02c9b97e1616cc166771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1334a23e19521c91f00bfb962767451b"><td class="memItemLeft" align="right" valign="top"><a id="a1334a23e19521c91f00bfb962767451b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getForecast</b> (struct <a class="el" href="struct_city.html">City</a> *cities, int numCities, struct <a class="el" href="struct_meteo.html">Meteo</a> **forecast, char *city, char *date, int days)</td></tr>
+<tr class="separator:a1334a23e19521c91f00bfb962767451b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10c23e1a6f40600227c4025d988a05e"><td class="memItemLeft" align="right" valign="top"><a id="ac10c23e1a6f40600227c4025d988a05e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>meteoDataToJSON</b> (struct <a class="el" href="struct_meteo.html">Meteo</a> *meteoData, int meteoDataLength, char **jsonData, char unit)</td></tr>
+<tr class="separator:ac10c23e1a6f40600227c4025d988a05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>En este fichero están definidas las funciones declaradas en <a class="el" href="meteo_8h.html" title="En este fichero están declaradas aquellas funciones que están relacionadas con el manejo y procesamie...">meteo.h</a>. </p>
+</div><h2 class="groupheader">Documentación de las funciones</h2>
+<a id="ad9b336515fd64ef72c6e26f5a35b563e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b336515fd64ef72c6e26f5a35b563e">&#9670;&nbsp;</a></span>binarySearchCities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int binarySearchCities </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>city</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_city.html">City</a> *&#160;</td>
+          <td class="paramname"><em>cities</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numCities</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función <a class="el" href="meteo_8h.html#ad9b336515fd64ef72c6e26f5a35b563e" title="La función binarySearchCities() realiza una busqueda binaria en el array de ciudades. ">binarySearchCities()</a> realiza una busqueda binaria en el array de ciudades. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">city</td><td>Se trata de un string (char *) que contiene el nombre de la ciudad a buscar </td></tr>
+    <tr><td class="paramname">cities</td><td>Se trata de un array de estructuras de tipo <a class="el" href="struct_city.html" title="Estructura de datos que contiene la informacíon de la ciudad almacenada. ">City</a> (struct <a class="el" href="struct_city.html" title="Estructura de datos que contiene la informacíon de la ciudad almacenada. ">City</a> *) que contiene las cidudades sobre las que se realizará la busqueda </td></tr>
+    <tr><td class="paramname">numCities</td><td>Se trata de un entero con el número de ciudades almacenadas </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>La función binarySearchCities devuelve la posición en el array de la ciudad si la ciudad es encontrada. Si no se ha encontrado devolverá -1. </dd></dl>
+
+</div>
+</div>
+<a id="ab82d28c57e0a02c9b97e1616cc166771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab82d28c57e0a02c9b97e1616cc166771">&#9670;&nbsp;</a></span>binarySearchDates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int binarySearchDates </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>date</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_meteo.html">Meteo</a> *&#160;</td>
+          <td class="paramname"><em>meteoData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numDataEntries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función <a class="el" href="meteo_8h.html#ad9b336515fd64ef72c6e26f5a35b563e" title="La función binarySearchCities() realiza una busqueda binaria en el array de ciudades. ">binarySearchCities()</a> realiza una busqueda binaria en el array de ciudades. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">city</td><td>Se trata de un puntero a una string (char *) que contiene el nombre de la ciudad a buscar </td></tr>
+    <tr><td class="paramname">cities</td><td>Se trata de un array de estructuras de tipo <a class="el" href="struct_city.html" title="Estructura de datos que contiene la informacíon de la ciudad almacenada. ">City</a> (struct <a class="el" href="struct_city.html" title="Estructura de datos que contiene la informacíon de la ciudad almacenada. ">City</a> *) que contiene las cidudades sobre las que se realizará la busqueda </td></tr>
+    <tr><td class="paramname">numCities</td><td>Se trata de un entero con el número de ciudades almacenadas </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>La función binarySearchCities devuelve la posición en el array de la ciudad si la ciudad es encontrada. Si no se ha encontrado devolverá -1. </dd></dl>
+
+</div>
+</div>
+<a id="a880debb531f66cd83579f541dc6ec64b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a880debb531f66cd83579f541dc6ec64b">&#9670;&nbsp;</a></span>customMeteoDataParser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_meteo.html">Meteo</a> customMeteoDataParser </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>line</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función <a class="el" href="meteo_8h.html#a880debb531f66cd83579f541dc6ec64b" title="La función customMeteoDataParser() recibe una string con los datos Meteorológicos en formato csv y lo...">customMeteoDataParser()</a> recibe una string con los datos Meteorológicos en formato csv y los convierte a una estructura de datos de tipo struct <a class="el" href="struct_meteo.html" title="Estructura de datos que continen la información meteorilógica de una ciudad en una fecha determinada...">Meteo</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>Se trata de un string (char *) que contiene la string con los datos que se quieren cargar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>La función <a class="el" href="meteo_8h.html#a880debb531f66cd83579f541dc6ec64b" title="La función customMeteoDataParser() recibe una string con los datos Meteorológicos en formato csv y lo...">customMeteoDataParser()</a> devuelve una estructura de datos de tipo <a class="el" href="struct_meteo.html" title="Estructura de datos que continen la información meteorilógica de una ciudad en una fecha determinada...">Meteo</a> (struct <a class="el" href="struct_meteo.html" title="Estructura de datos que continen la información meteorilógica de una ciudad en una fecha determinada...">Meteo</a>) con los datos cargados del string line </dd></dl>
+
+</div>
+</div>
+<a id="a3d3bf46df3c9bf070f7fd007f03e0308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d3bf46df3c9bf070f7fd007f03e0308">&#9670;&nbsp;</a></span>loadData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int loadData </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_city.html">City</a> **&#160;</td>
+          <td class="paramname"><em>cities</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La función <a class="el" href="meteo_8h.html#a3d3bf46df3c9bf070f7fd007f03e0308" title="La función loadData() carga datos desde un fichero de texto en formato csv a un array de ciudades de ...">loadData()</a> carga datos desde un fichero de texto en formato csv a un array de ciudades de tipo <a class="el" href="struct_city.html" title="Estructura de datos que contiene la informacíon de la ciudad almacenada. ">City</a> (struct <a class="el" href="struct_city.html" title="Estructura de datos que contiene la informacíon de la ciudad almacenada. ">City</a> *). Para cada entrada de este array de ciudades, se encuantrasn los datos meteorológicos correspondientes a cada ciudad. Las ciudades son ordenadas por orden Alfabético para facilitar su búsqueda. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Se trata de un string (char *) que contiene el nombre del fichero de texto a cargar. </td></tr>
+    <tr><td class="paramname">cities</td><td>Se trata de un puntero a un array de estructuras de tipo <a class="el" href="struct_city.html" title="Estructura de datos que contiene la informacíon de la ciudad almacenada. ">City</a> (struct <a class="el" href="struct_city.html" title="Estructura de datos que contiene la informacíon de la ciudad almacenada. ">City</a> **) en el que se van a almacenar los datos cargados por ciudades </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>La función <a class="el" href="meteo_8h.html#a3d3bf46df3c9bf070f7fd007f03e0308" title="La función loadData() carga datos desde un fichero de texto en formato csv a un array de ciudades de ...">loadData()</a> devuelve el número de elementos cargados si tiene éxito. En caso de error devolverá -1. </dd></dl>
+<dl class="section warning"><dt>Atención</dt><dd>Es necesario liberar la memoria reservada en la función <a class="el" href="meteo_8h.html#a3d3bf46df3c9bf070f7fd007f03e0308" title="La función loadData() carga datos desde un fichero de texto en formato csv a un array de ciudades de ...">loadData()</a> del parametro cities. Para ello liberaremos la información para cada entrada meteorológica para cada ciudad y posteriormente liberaremos la memoria reservada para cada ciudad. </dd></dl>
+
+</div>
+</div>
+<a id="abc17b507204e3b9f31ce4c92dcdf9f25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc17b507204e3b9f31ce4c92dcdf9f25">&#9670;&nbsp;</a></span>printMeteoEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printMeteoEntry </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_meteo.html">Meteo</a>&#160;</td>
+          <td class="paramname"><em>meteoData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La funcion <a class="el" href="meteo_8h.html#abc17b507204e3b9f31ce4c92dcdf9f25" title="La funcion printMeteoEntry() muestra por pantalla la información de la entrada meteorológica recibida...">printMeteoEntry()</a> muestra por pantalla la información de la entrada meteorológica recibida. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meteoData</td><td>Se trata de una estructura de datos de tipo <a class="el" href="struct_meteo.html" title="Estructura de datos que continen la información meteorilógica de una ciudad en una fecha determinada...">Meteo</a> la cual contiene la información a mostrar por pantalla </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="meteo_8c.html">meteo.c</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

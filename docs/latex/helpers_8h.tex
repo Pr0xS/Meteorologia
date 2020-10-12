@@ -1,0 +1,273 @@
+\hypertarget{helpers_8h}{}\section{Referencia del Archivo helpers.\+h}
+\label{helpers_8h}\index{helpers.\+h@{helpers.\+h}}
+
+
+En este fichero están declaradas aquellas funciones cuyo objetivo es de caracter general y pueden ser invocadas en multiples situaciones.  
+
+
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$$\ast$ \hyperlink{helpers_8h_a58adee3403e7a7512c6f49ef0e8b0f07}{split} (char $\ast$string, const char delimiter)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{helpers_8h_a58adee3403e7a7512c6f49ef0e8b0f07}{split()} divide el string recibido en substring utilizando como divisor un delimitador. Ejemplo split(\char`\"{}\+Esto es una prueba\char`\"{}, \textquotesingle{} \textquotesingle{}) obtendriamos un array con 4 strings \char`\"{}\+Esto\char`\"{}, \char`\"{}es\char`\"{}, \char`\"{}una\char`\"{}, \char`\"{}prueba\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{helpers_8h_ae9ca2f658e02c3ef3302e2ad7a0356a0}{fix\+Decimal\+Notation} (char $\ast$string)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{helpers_8h_ae9ca2f658e02c3ef3302e2ad7a0356a0}{fix\+Decimal\+Notation()} corrige la notación de los números decimales. Sustituye los decimales expresados con \textquotesingle{},\textquotesingle{} por \textquotesingle{}.\textquotesingle{} Ejemplo\+: 12,23 -\/$>$ 12.\+23. \end{DoxyCompactList}\item 
+void \hyperlink{helpers_8h_af68d9fdd9102d21554f60e6c2afde9bc}{trim} (char $\ast$string)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{helpers_8h_af68d9fdd9102d21554f60e6c2afde9bc}{trim()} elimina los espacios en blanco \textquotesingle{} \textquotesingle{} y otros caracters especiales tanto al comienzo como al final del string recibido. \end{DoxyCompactList}\item 
+int \hyperlink{helpers_8h_a2d9b91100e4307984c9e41f3d47dada0}{get\+Int\+From\+User\+Input} (int $\ast$number)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{helpers_8h_a2d9b91100e4307984c9e41f3d47dada0}{get\+Int\+From\+User\+Input()} recibe una entrada por teclado y la convierte en I\+NT cuando sea posible. \end{DoxyCompactList}\item 
+int \hyperlink{helpers_8h_a367f54c6ff80a74d875d3b161da90827}{get\+String\+From\+User\+Input} (char $\ast$string, int size)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{helpers_8h_a367f54c6ff80a74d875d3b161da90827}{get\+String\+From\+User\+Input()} recibe una entrada por teclado y la almacena. \end{DoxyCompactList}\item 
+int \hyperlink{helpers_8h_a1e16ea4710f499152daf970bcffb0074}{compare\+String} (void const $\ast$str1, void const $\ast$str2)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{helpers_8h_a1e16ea4710f499152daf970bcffb0074}{compare\+String()} compara dos string. Internamente utiliza la funcion strcmp(). La razón de ser de esta función es para utilizarla como comparador en la función de ordenación qsort() \end{DoxyCompactList}\item 
+int \hyperlink{helpers_8h_a2bc70074fd651e078431ad3736e7ceab}{compare\+Dates} (char $\ast$date1, char $\ast$date2)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{helpers_8h_a2bc70074fd651e078431ad3736e7ceab}{compare\+Dates()} compara dos fechas en formato A\+A\+A\+A/\+M\+M/\+DD (Año/\+Mes/\+Día) \end{DoxyCompactList}\item 
+int \hyperlink{helpers_8h_a51ede5ead55335ba299ce5e6aca88161}{str\+Celsius\+To\+Str\+Fahrenheit} (char $\ast$celsius, char $\ast$$\ast$fahrenheit)
+\begin{DoxyCompactList}\small\item\em La función str\+Celsius\+To\+Str\+Fahrengeit() recibe grados celsiud en formato string para transofrmalor en grados Fahrenheit también en formato string. \end{DoxyCompactList}\item 
+int \hyperlink{helpers_8h_a91604741dc25c3a05677088115ca4ff8}{string\+To\+Float} (double $\ast$value, char $\ast$data)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{helpers_8h_a91604741dc25c3a05677088115ca4ff8}{string\+To\+Float()} convierte una cadena de caracteres en float si es posible. \end{DoxyCompactList}\item 
+double \hyperlink{helpers_8h_a5353121dd9cdcdc4ca00af0c575fc28a}{celsius\+To\+Fahrenheit} (double celsius)
+\begin{DoxyCompactList}\small\item\em La función celsius\+To\+Fahrenheit convierte los grados Celius introducidos en Fahrenheit. \end{DoxyCompactList}\item 
+int \hyperlink{helpers_8h_a8410b241bcf3b22e1c847a2283f4e2b1}{store\+To\+File} (char $\ast$filename, char $\ast$data)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{helpers_8h_a8410b241bcf3b22e1c847a2283f4e2b1}{store\+To\+File()} almacena en un fichero los datos proporcionados. Esta función creará el fichero si no existe o lo sobreescribirá en caso de que existiera. \end{DoxyCompactList}\item 
+void \hyperlink{helpers_8h_a255ecddfbf1fed18844d00ec7d2302ee}{replace} (char $\ast$string, char c1, char c2)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{helpers_8h_a255ecddfbf1fed18844d00ec7d2302ee}{replace()}, reemplaza la el caracter c1 por c2 en toda la string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+En este fichero están declaradas aquellas funciones cuyo objetivo es de caracter general y pueden ser invocadas en multiples situaciones. 
+
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{helpers_8h_a5353121dd9cdcdc4ca00af0c575fc28a}\label{helpers_8h_a5353121dd9cdcdc4ca00af0c575fc28a}} 
+\index{helpers.\+h@{helpers.\+h}!celsius\+To\+Fahrenheit@{celsius\+To\+Fahrenheit}}
+\index{celsius\+To\+Fahrenheit@{celsius\+To\+Fahrenheit}!helpers.\+h@{helpers.\+h}}
+\subsubsection{\texorpdfstring{celsius\+To\+Fahrenheit()}{celsiusToFahrenheit()}}
+{\footnotesize\ttfamily double celsius\+To\+Fahrenheit (\begin{DoxyParamCaption}\item[{double}]{celsius }\end{DoxyParamCaption})}
+
+
+
+La función celsius\+To\+Fahrenheit convierte los grados Celius introducidos en Fahrenheit. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em celsius} & Se trata de un double que contiene los grados celsius a convertir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La función celsius\+To\+Fahrenheit devuelve un double con la conversión de Celsius a Fahrenheit 
+\end{DoxyReturn}
+\mbox{\Hypertarget{helpers_8h_a2bc70074fd651e078431ad3736e7ceab}\label{helpers_8h_a2bc70074fd651e078431ad3736e7ceab}} 
+\index{helpers.\+h@{helpers.\+h}!compare\+Dates@{compare\+Dates}}
+\index{compare\+Dates@{compare\+Dates}!helpers.\+h@{helpers.\+h}}
+\subsubsection{\texorpdfstring{compare\+Dates()}{compareDates()}}
+{\footnotesize\ttfamily int compare\+Dates (\begin{DoxyParamCaption}\item[{char $\ast$}]{date1,  }\item[{char $\ast$}]{date2 }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{helpers_8h_a2bc70074fd651e078431ad3736e7ceab}{compare\+Dates()} compara dos fechas en formato A\+A\+A\+A/\+M\+M/\+DD (Año/\+Mes/\+Día) 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em date1} & Se trata de un string (char $\ast$) que contiene la primera fecha a comparar. \\
+\hline
+{\em date2} & Se trata de un string (char $\ast$) que contiene la segunda fecha a comparar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Si date1 $>$ date2 devuelve un 1; Si date1 $<$ date2 devuelve un -\/1; Si date1 == date2 devuelve un 0; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{helpers_8h_a1e16ea4710f499152daf970bcffb0074}\label{helpers_8h_a1e16ea4710f499152daf970bcffb0074}} 
+\index{helpers.\+h@{helpers.\+h}!compare\+String@{compare\+String}}
+\index{compare\+String@{compare\+String}!helpers.\+h@{helpers.\+h}}
+\subsubsection{\texorpdfstring{compare\+String()}{compareString()}}
+{\footnotesize\ttfamily int compare\+String (\begin{DoxyParamCaption}\item[{void const $\ast$}]{str1,  }\item[{void const $\ast$}]{str2 }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{helpers_8h_a1e16ea4710f499152daf970bcffb0074}{compare\+String()} compara dos string. Internamente utiliza la funcion strcmp(). La razón de ser de esta función es para utilizarla como comparador en la función de ordenación qsort() 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em str1} & Se trata de un string (char $\ast$) que contiene la primera string a comparar. \\
+\hline
+{\em str2} & Se trata de un string (char $\ast$) que contiene la segunda string a comparar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Si str1 $>$ str2 devuelve un número positivo; Si str1 $<$ str2 devuelve un número negativo; Si str1 == str2 devuelve un cero; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{helpers_8h_ae9ca2f658e02c3ef3302e2ad7a0356a0}\label{helpers_8h_ae9ca2f658e02c3ef3302e2ad7a0356a0}} 
+\index{helpers.\+h@{helpers.\+h}!fix\+Decimal\+Notation@{fix\+Decimal\+Notation}}
+\index{fix\+Decimal\+Notation@{fix\+Decimal\+Notation}!helpers.\+h@{helpers.\+h}}
+\subsubsection{\texorpdfstring{fix\+Decimal\+Notation()}{fixDecimalNotation()}}
+{\footnotesize\ttfamily void fix\+Decimal\+Notation (\begin{DoxyParamCaption}\item[{char $\ast$}]{string }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{helpers_8h_ae9ca2f658e02c3ef3302e2ad7a0356a0}{fix\+Decimal\+Notation()} corrige la notación de los números decimales. Sustituye los decimales expresados con \textquotesingle{},\textquotesingle{} por \textquotesingle{}.\textquotesingle{} Ejemplo\+: 12,23 -\/$>$ 12.\+23. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em string} & Se trata de un string (char $\ast$) que contiene el número al que se le quiere corregir el simbolo de decimal. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{helpers_8h_a2d9b91100e4307984c9e41f3d47dada0}\label{helpers_8h_a2d9b91100e4307984c9e41f3d47dada0}} 
+\index{helpers.\+h@{helpers.\+h}!get\+Int\+From\+User\+Input@{get\+Int\+From\+User\+Input}}
+\index{get\+Int\+From\+User\+Input@{get\+Int\+From\+User\+Input}!helpers.\+h@{helpers.\+h}}
+\subsubsection{\texorpdfstring{get\+Int\+From\+User\+Input()}{getIntFromUserInput()}}
+{\footnotesize\ttfamily int get\+Int\+From\+User\+Input (\begin{DoxyParamCaption}\item[{int $\ast$}]{number }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{helpers_8h_a2d9b91100e4307984c9e41f3d47dada0}{get\+Int\+From\+User\+Input()} recibe una entrada por teclado y la convierte en I\+NT cuando sea posible. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em number} & Se trata de un puntero a entero (int $\ast$) en el cuál se almacenará el número recibido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La función devuelve un 0 en caso de que se haya podido recibir y convertir la entrada a entero. En caso de error, devolverá -\/1. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{helpers_8h_a367f54c6ff80a74d875d3b161da90827}\label{helpers_8h_a367f54c6ff80a74d875d3b161da90827}} 
+\index{helpers.\+h@{helpers.\+h}!get\+String\+From\+User\+Input@{get\+String\+From\+User\+Input}}
+\index{get\+String\+From\+User\+Input@{get\+String\+From\+User\+Input}!helpers.\+h@{helpers.\+h}}
+\subsubsection{\texorpdfstring{get\+String\+From\+User\+Input()}{getStringFromUserInput()}}
+{\footnotesize\ttfamily int get\+String\+From\+User\+Input (\begin{DoxyParamCaption}\item[{char $\ast$}]{string,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{helpers_8h_a367f54c6ff80a74d875d3b161da90827}{get\+String\+From\+User\+Input()} recibe una entrada por teclado y la almacena. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em string} & Se trata de un string (char $\ast$) en el cuál se almacenará el la cadena de texto recibida. \\
+\hline
+{\em size} & Entero con la tamaño máximo de la cadena que se desea recibir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La función devuelve un entero indicando la longitud del string recibido. En caso de error devolverá -\/1. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{helpers_8h_a255ecddfbf1fed18844d00ec7d2302ee}\label{helpers_8h_a255ecddfbf1fed18844d00ec7d2302ee}} 
+\index{helpers.\+h@{helpers.\+h}!replace@{replace}}
+\index{replace@{replace}!helpers.\+h@{helpers.\+h}}
+\subsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily void replace (\begin{DoxyParamCaption}\item[{char $\ast$}]{string,  }\item[{char}]{c1,  }\item[{char}]{c2 }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{helpers_8h_a255ecddfbf1fed18844d00ec7d2302ee}{replace()}, reemplaza la el caracter c1 por c2 en toda la string. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em string} & Se trata de un string que contiene los caracteres que se quieren reemplazar \\
+\hline
+{\em c1} & Se trata de caracter que se quiere reemplazar por otro \\
+\hline
+{\em c2} & Se trata de caracter por el cuál se va a reemplazar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{helpers_8h_a58adee3403e7a7512c6f49ef0e8b0f07}\label{helpers_8h_a58adee3403e7a7512c6f49ef0e8b0f07}} 
+\index{helpers.\+h@{helpers.\+h}!split@{split}}
+\index{split@{split}!helpers.\+h@{helpers.\+h}}
+\subsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily char$\ast$$\ast$ split (\begin{DoxyParamCaption}\item[{char $\ast$}]{string,  }\item[{const char}]{delimiter }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{helpers_8h_a58adee3403e7a7512c6f49ef0e8b0f07}{split()} divide el string recibido en substring utilizando como divisor un delimitador. Ejemplo split(\char`\"{}\+Esto es una prueba\char`\"{}, \textquotesingle{} \textquotesingle{}) obtendriamos un array con 4 strings \char`\"{}\+Esto\char`\"{}, \char`\"{}es\char`\"{}, \char`\"{}una\char`\"{}, \char`\"{}prueba\char`\"{}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em string} & Se trata de un string (char $\ast$) que contiene la string que se quiere dividir. \\
+\hline
+{\em delimiter} & Se trata de un caracter (char) que contiene el delimitador por el cual se dividirá el string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La función \hyperlink{helpers_8h_a58adee3403e7a7512c6f49ef0e8b0f07}{split()} devuelve un array de strings (char $\ast$$\ast$) en el cual cada posición del array contiene una de las divisiones del string introducido. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Atención}
+Es necesario liberar la memoria reservada por la funcion \hyperlink{helpers_8h_a58adee3403e7a7512c6f49ef0e8b0f07}{split()} del parametro devuelto. Para ello liberaremos la memoria reservada para cada string devuelto en el array y luego liberaremos la memoria del array. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{helpers_8h_a8410b241bcf3b22e1c847a2283f4e2b1}\label{helpers_8h_a8410b241bcf3b22e1c847a2283f4e2b1}} 
+\index{helpers.\+h@{helpers.\+h}!store\+To\+File@{store\+To\+File}}
+\index{store\+To\+File@{store\+To\+File}!helpers.\+h@{helpers.\+h}}
+\subsubsection{\texorpdfstring{store\+To\+File()}{storeToFile()}}
+{\footnotesize\ttfamily int store\+To\+File (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename,  }\item[{char $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{helpers_8h_a8410b241bcf3b22e1c847a2283f4e2b1}{store\+To\+File()} almacena en un fichero los datos proporcionados. Esta función creará el fichero si no existe o lo sobreescribirá en caso de que existiera. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em filename} & Se trata de un string (char $\ast$) que contiene el nombre del fichero donde se va a guardar los datos \\
+\hline
+{\em data} & Se trata de un string (char $\ast$) que contiene los datos que se van a almancenar en el fichero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La función store\+To\+File devuelve un entero con un valor de 0 en caso de éxito y un -\/1 en caso de error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{helpers_8h_a51ede5ead55335ba299ce5e6aca88161}\label{helpers_8h_a51ede5ead55335ba299ce5e6aca88161}} 
+\index{helpers.\+h@{helpers.\+h}!str\+Celsius\+To\+Str\+Fahrenheit@{str\+Celsius\+To\+Str\+Fahrenheit}}
+\index{str\+Celsius\+To\+Str\+Fahrenheit@{str\+Celsius\+To\+Str\+Fahrenheit}!helpers.\+h@{helpers.\+h}}
+\subsubsection{\texorpdfstring{str\+Celsius\+To\+Str\+Fahrenheit()}{strCelsiusToStrFahrenheit()}}
+{\footnotesize\ttfamily int str\+Celsius\+To\+Str\+Fahrenheit (\begin{DoxyParamCaption}\item[{char $\ast$}]{celsius,  }\item[{char $\ast$$\ast$}]{fahrenheit }\end{DoxyParamCaption})}
+
+
+
+La función str\+Celsius\+To\+Str\+Fahrengeit() recibe grados celsiud en formato string para transofrmalor en grados Fahrenheit también en formato string. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em celsius} & Se trata de un string (char $\ast$) que contiene los grados celsiud a convertir \\
+\hline
+{\em fahrenheit} & Se trata de un puntero a string (char $\ast$$\ast$) que contendrá el resultado de la conversión de Celsiud a Fahrenheit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La función str\+Celsiud\+To\+Str\+Fahrenheit() devuelve un entero con valor 0 si la operación a resultado con éxito y un -\/1 si se produce un error. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Atención}
+Es necesario liberar la memoria reservada por la función \hyperlink{helpers_8h_a51ede5ead55335ba299ce5e6aca88161}{str\+Celsius\+To\+Str\+Fahrenheit()}. Para ello liberaremos la mermoria del puntero a string fahrenheit. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{helpers_8h_a91604741dc25c3a05677088115ca4ff8}\label{helpers_8h_a91604741dc25c3a05677088115ca4ff8}} 
+\index{helpers.\+h@{helpers.\+h}!string\+To\+Float@{string\+To\+Float}}
+\index{string\+To\+Float@{string\+To\+Float}!helpers.\+h@{helpers.\+h}}
+\subsubsection{\texorpdfstring{string\+To\+Float()}{stringToFloat()}}
+{\footnotesize\ttfamily int string\+To\+Float (\begin{DoxyParamCaption}\item[{double $\ast$}]{value,  }\item[{char $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{helpers_8h_a91604741dc25c3a05677088115ca4ff8}{string\+To\+Float()} convierte una cadena de caracteres en float si es posible. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em value} & Se trata de un double donde se almacenará el número en caso de éxito; \\
+\hline
+{\em data} & Se trata de un string (char $\ast$) que contiene los datos que se desean convertir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La función string\+To\+Float devuelve un entero con un 0 en caso de éxito y un -\/1 si hay algún error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{helpers_8h_af68d9fdd9102d21554f60e6c2afde9bc}\label{helpers_8h_af68d9fdd9102d21554f60e6c2afde9bc}} 
+\index{helpers.\+h@{helpers.\+h}!trim@{trim}}
+\index{trim@{trim}!helpers.\+h@{helpers.\+h}}
+\subsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily void trim (\begin{DoxyParamCaption}\item[{char $\ast$}]{string }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{helpers_8h_af68d9fdd9102d21554f60e6c2afde9bc}{trim()} elimina los espacios en blanco \textquotesingle{} \textquotesingle{} y otros caracters especiales tanto al comienzo como al final del string recibido. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em string} & Se trata de un string (char $\ast$) a la que le queremos quitar los espacios en blanco. \\
+\hline
+\end{DoxyParams}

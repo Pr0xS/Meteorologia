@@ -1,0 +1,171 @@
+\begin{theindex}
+
+  \item {binary\+Search\+Cities}
+    \subitem {meteo.\+c}, \hyperpage{24}
+    \subitem {meteo.\+h}, \hyperpage{27}
+  \item {binary\+Search\+Dates}
+    \subitem {meteo.\+c}, \hyperpage{24}
+    \subitem {meteo.\+h}, \hyperpage{28}
+
+  \indexspace
+
+  \item {celsius\+To\+Fahrenheit}
+    \subitem {helpers.\+c}, \hyperpage{10}
+    \subitem {helpers.\+h}, \hyperpage{16}
+  \item {City}, \hyperpage{5}
+    \subitem {city}, \hyperpage{5}
+    \subitem {memory\+\_\+reserved}, \hyperpage{5}
+    \subitem {meteo\+Data\+\_\+array}, \hyperpage{5}
+    \subitem {n\+\_\+meteo\+Data\+\_\+entries}, \hyperpage{6}
+  \item {city}
+    \subitem {City}, \hyperpage{5}
+    \subitem {Meteo}, \hyperpage{6}
+  \item {cloudiness}
+    \subitem {Meteo}, \hyperpage{6}
+  \item {compare\+Dates}
+    \subitem {helpers.\+c}, \hyperpage{10}
+    \subitem {helpers.\+h}, \hyperpage{16}
+  \item {compare\+String}
+    \subitem {helpers.\+c}, \hyperpage{11}
+    \subitem {helpers.\+h}, \hyperpage{16}
+  \item {custom\+Meteo\+Data\+Parser}
+    \subitem {meteo.\+c}, \hyperpage{24}
+    \subitem {meteo.\+h}, \hyperpage{28}
+
+  \indexspace
+
+  \item {date}
+    \subitem {Meteo}, \hyperpage{7}
+
+  \indexspace
+
+  \item {fix\+Decimal\+Notation}
+    \subitem {helpers.\+c}, \hyperpage{11}
+    \subitem {helpers.\+h}, \hyperpage{17}
+
+  \indexspace
+
+  \item {get\+Int\+From\+User\+Input}
+    \subitem {helpers.\+c}, \hyperpage{11}
+    \subitem {helpers.\+h}, \hyperpage{17}
+  \item {get\+String\+From\+User\+Input}
+    \subitem {helpers.\+c}, \hyperpage{12}
+    \subitem {helpers.\+h}, \hyperpage{17}
+
+  \indexspace
+
+  \item {helpers.\+c}, \hyperpage{9}
+    \subitem {celsius\+To\+Fahrenheit}, \hyperpage{10}
+    \subitem {compare\+Dates}, \hyperpage{10}
+    \subitem {compare\+String}, \hyperpage{11}
+    \subitem {fix\+Decimal\+Notation}, \hyperpage{11}
+    \subitem {get\+Int\+From\+User\+Input}, \hyperpage{11}
+    \subitem {get\+String\+From\+User\+Input}, \hyperpage{12}
+    \subitem {replace}, \hyperpage{12}
+    \subitem {split}, \hyperpage{12}
+    \subitem {store\+To\+File}, \hyperpage{13}
+    \subitem {str\+Celsius\+To\+Str\+Fahrenheit}, \hyperpage{13}
+    \subitem {string\+To\+Float}, \hyperpage{14}
+    \subitem {trim}, \hyperpage{14}
+  \item {helpers.\+h}, \hyperpage{15}
+    \subitem {celsius\+To\+Fahrenheit}, \hyperpage{16}
+    \subitem {compare\+Dates}, \hyperpage{16}
+    \subitem {compare\+String}, \hyperpage{16}
+    \subitem {fix\+Decimal\+Notation}, \hyperpage{17}
+    \subitem {get\+Int\+From\+User\+Input}, \hyperpage{17}
+    \subitem {get\+String\+From\+User\+Input}, \hyperpage{17}
+    \subitem {replace}, \hyperpage{18}
+    \subitem {split}, \hyperpage{18}
+    \subitem {store\+To\+File}, \hyperpage{19}
+    \subitem {str\+Celsius\+To\+Str\+Fahrenheit}, \hyperpage{19}
+    \subitem {string\+To\+Float}, \hyperpage{20}
+    \subitem {trim}, \hyperpage{20}
+
+  \indexspace
+
+  \item {interfaces.\+c}, \hyperpage{20}
+    \subitem {show\+Forecast}, \hyperpage{21}
+  \item {interfaces.\+h}, \hyperpage{21}
+    \subitem {show\+Forecast}, \hyperpage{22}
+
+  \indexspace
+
+  \item {load\+Data}
+    \subitem {meteo.\+c}, \hyperpage{25}
+    \subitem {meteo.\+h}, \hyperpage{29}
+
+  \indexspace
+
+  \item {main.\+c}, \hyperpage{22}
+  \item {max\+\_\+temp}
+    \subitem {Meteo}, \hyperpage{7}
+  \item {memory\+\_\+reserved}
+    \subitem {City}, \hyperpage{5}
+  \item {Meteo}, \hyperpage{6}
+    \subitem {city}, \hyperpage{6}
+    \subitem {cloudiness}, \hyperpage{6}
+    \subitem {date}, \hyperpage{7}
+    \subitem {max\+\_\+temp}, \hyperpage{7}
+    \subitem {min\+\_\+temp}, \hyperpage{7}
+    \subitem {precipitations}, \hyperpage{7}
+  \item {meteo.\+c}, \hyperpage{23}
+    \subitem {binary\+Search\+Cities}, \hyperpage{24}
+    \subitem {binary\+Search\+Dates}, \hyperpage{24}
+    \subitem {custom\+Meteo\+Data\+Parser}, \hyperpage{24}
+    \subitem {load\+Data}, \hyperpage{25}
+    \subitem {print\+Meteo\+Entry}, \hyperpage{25}
+  \item {meteo.\+h}, \hyperpage{27}
+    \subitem {binary\+Search\+Cities}, \hyperpage{27}
+    \subitem {binary\+Search\+Dates}, \hyperpage{28}
+    \subitem {custom\+Meteo\+Data\+Parser}, \hyperpage{28}
+    \subitem {load\+Data}, \hyperpage{29}
+    \subitem {print\+Meteo\+Entry}, \hyperpage{29}
+  \item {meteo\+Data\+\_\+array}
+    \subitem {City}, \hyperpage{5}
+  \item {min\+\_\+temp}
+    \subitem {Meteo}, \hyperpage{7}
+
+  \indexspace
+
+  \item {n\+\_\+meteo\+Data\+\_\+entries}
+    \subitem {City}, \hyperpage{6}
+
+  \indexspace
+
+  \item {precipitations}
+    \subitem {Meteo}, \hyperpage{7}
+  \item {print\+Meteo\+Entry}
+    \subitem {meteo.\+c}, \hyperpage{25}
+    \subitem {meteo.\+h}, \hyperpage{29}
+
+  \indexspace
+
+  \item {replace}
+    \subitem {helpers.\+c}, \hyperpage{12}
+    \subitem {helpers.\+h}, \hyperpage{18}
+
+  \indexspace
+
+  \item {show\+Forecast}
+    \subitem {interfaces.\+c}, \hyperpage{21}
+    \subitem {interfaces.\+h}, \hyperpage{22}
+  \item {split}
+    \subitem {helpers.\+c}, \hyperpage{12}
+    \subitem {helpers.\+h}, \hyperpage{18}
+  \item {store\+To\+File}
+    \subitem {helpers.\+c}, \hyperpage{13}
+    \subitem {helpers.\+h}, \hyperpage{19}
+  \item {str\+Celsius\+To\+Str\+Fahrenheit}
+    \subitem {helpers.\+c}, \hyperpage{13}
+    \subitem {helpers.\+h}, \hyperpage{19}
+  \item {string\+To\+Float}
+    \subitem {helpers.\+c}, \hyperpage{14}
+    \subitem {helpers.\+h}, \hyperpage{20}
+
+  \indexspace
+
+  \item {trim}
+    \subitem {helpers.\+c}, \hyperpage{14}
+    \subitem {helpers.\+h}, \hyperpage{20}
+
+\end{theindex}

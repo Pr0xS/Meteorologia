@@ -1,0 +1,51 @@
+\hypertarget{interfaces_8c}{}\section{Referencia del Archivo interfaces.\+c}
+\label{interfaces_8c}\index{interfaces.\+c@{interfaces.\+c}}
+
+
+En este fichero están definidas las funciones declaradas en \hyperlink{interfaces_8h}{interfaces.\+h}.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}interfaces.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}meteo.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}helpers.\+h\char`\"{}}\newline
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfaces_8c_aab9dea39e8548421b4cf1816e68f17d2}\label{interfaces_8c_aab9dea39e8548421b4cf1816e68f17d2}} 
+int {\bfseries interactive\+Menu} (char $\ast$city, char $\ast$date, char $\ast$unit, int $\ast$days, int $\ast$print\+J\+S\+ON, int $\ast$save\+J\+S\+ON)
+\item 
+int \hyperlink{interfaces_8c_abebfb5decbf5920daaaf695843fae9bd}{show\+Forecast} (struct \hyperlink{struct_meteo}{Meteo} $\ast$forecast, int n\+\_\+data, char unit)
+\begin{DoxyCompactList}\small\item\em La función \hyperlink{interfaces_8h_abebfb5decbf5920daaaf695843fae9bd}{show\+Forecast()} imprime por pantalla la información meteorológica proporcionada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+En este fichero están definidas las funciones declaradas en \hyperlink{interfaces_8h}{interfaces.\+h}. 
+
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{interfaces_8c_abebfb5decbf5920daaaf695843fae9bd}\label{interfaces_8c_abebfb5decbf5920daaaf695843fae9bd}} 
+\index{interfaces.\+c@{interfaces.\+c}!show\+Forecast@{show\+Forecast}}
+\index{show\+Forecast@{show\+Forecast}!interfaces.\+c@{interfaces.\+c}}
+\subsubsection{\texorpdfstring{show\+Forecast()}{showForecast()}}
+{\footnotesize\ttfamily int show\+Forecast (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_meteo}{Meteo} $\ast$}]{forecast,  }\item[{int}]{n\+\_\+data,  }\item[{char}]{unit }\end{DoxyParamCaption})}
+
+
+
+La función \hyperlink{interfaces_8h_abebfb5decbf5920daaaf695843fae9bd}{show\+Forecast()} imprime por pantalla la información meteorológica proporcionada. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em forecast} & Se trata de un array de estructuras de tipo \hyperlink{struct_meteo}{Meteo} (struct \hyperlink{struct_meteo}{Meteo} $\ast$) que contiene la información meteorológica. \\
+\hline
+{\em n\+\_\+data} & Se trata de un entero que contiene la cantidad de entradas meteorológicas que contiene el array forecast. \\
+\hline
+{\em unit} & Se trata de una char que contiene la unidad en la que se representarán las unidades. Estas pueden ser \textquotesingle{}C\textquotesingle{} para Celsius o \textquotesingle{}F\textquotesingle{} para Fahrenheit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La función show\+Forecast devuelve un entero con valor 0 si se ha ejecutado con éxito, y un -\/1 si se ha producido un error. 
+\end{DoxyReturn}
